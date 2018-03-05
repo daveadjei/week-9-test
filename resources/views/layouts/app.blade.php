@@ -6,13 +6,13 @@
     <title>Justice League</title>
 
     <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Bangers&amp;subset=latin-ext" rel="stylesheet">
-    
+
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
 <body>
 
     <nav class="menu">
-        <a href="#">Home</a>
+        <a href="{{route('Homepage')}}">Home</a>
         @guest
             <a href="{{ route('login') }}">Login</a>
             <a href="{{ route('register') }}">Register</a>
@@ -24,7 +24,7 @@
             </form>
         @endguest
     </nav>
-    
+
     @yield('content')
 
 </body>
