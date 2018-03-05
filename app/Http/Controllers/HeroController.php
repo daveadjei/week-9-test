@@ -15,4 +15,9 @@ class HeroController extends Controller
         $view->hero = $hero;
         return $view;
     }
+
+    public function index()
+    {
+        return view ('hero.index');
+    }
 }
