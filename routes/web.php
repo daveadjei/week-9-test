@@ -20,3 +20,4 @@ Auth::routes();
 // Route::get('/home', 'HomeController@index')->name('Homepage');
 Route::get('/hero/{$hero_slug}', 'HeroController@show');
 Route::get('/hero', 'HeroController@index');
+Route::post('/show', 'HeroController@store');

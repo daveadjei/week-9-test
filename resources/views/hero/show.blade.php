@@ -33,7 +33,7 @@
 
             <textarea name="description" placeholder="Thorough description"></textarea>
 
-            <input type="submit" value="Send to the Watchtower">
+            <input type="submit" value="{{action('HeroController@store')}}">
         </form>
     </section>
 
