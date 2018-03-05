@@ -9,7 +9,7 @@ class Hero extends Model
     public function hero()
     {
 
-        return $this->hasMany('App\Hero', 'hero_id');
+        return $this->hasMany('App\Image', 'hero_image');
     }
 
 }
